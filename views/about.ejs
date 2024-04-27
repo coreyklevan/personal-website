@@ -15,13 +15,19 @@
         <h2>About Me</h2>
         <p>Hi my name is Corey Klevan I am a recent graduate from Arcadia University with a Bachloers of Science in Computer Science and a Bachloers of Arts in Data Science.</p>
         <p>Below are some links to check out!</p>
-        <a href="https://www.linkedin.com/in/corey-klevan/" class="links">LinkedIn</a>
-        <a href="https://github.com/coreyklevan" class="links">GitHub</a>
-        <a href="/docs/ResumeCoreyKlevan.pdf" class="links">Resume</a>
+        <a href="https://www.linkedin.com/in/corey-klevan/" class="links" target="_blank">LinkedIn</a>
+        <a href="https://github.com/coreyklevan" class="links" target="_blank">GitHub</a>
+        <a href="/docs/ResumeCoreyKlevan.pdf" class="links" target="_blank">Resume</a>
     </div>
     <h2>Projects</h2>
     <div class="container">
-        <!--list projects here-->
+        <h3>Capstone: RoundTableRealms</h3>
+        <p>RoundTableRealms is a proof of concept for a virtual reality Dungeons and Dragons experience combining the best aspects of both in person D&D and virtual D&D</p>
+        <h3>VPN</h3>
+        <p>I built my own vpn using Linux, Stunnel, and OpenVPN connect</p>
+        <h3>Danger Drive</h3>
+        <p>Danger drive is a flash drive I made that steals passwords from different webbrowsers using a bat file.</p>
+        <p>More of my projects can be seen on my github on the link above</p>
     </div>
 </body>
 
@@ -41,6 +47,12 @@
         text-align: center;
     }
     
+    a:link {
+        color: blue;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
     a:hover {
         color: red;
         text-decoration: none;
@@ -50,11 +62,14 @@
         color: purple;
     }
     
-    a:link {
-        color: blue;
-        text-decoration: none;
-        text-align: center;
+    p {
+        margin-left: 10px;
+    }
+    
+    .links {
+        display: block;
         margin: 10px;
+        text-align: center;
     }
 </style>
 
