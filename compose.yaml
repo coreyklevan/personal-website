@@ -8,6 +8,3 @@ services:
       - "1650:1650"
     volumes:
       - uploads:/app/uploads
-
-volumes:
-  uploads:
