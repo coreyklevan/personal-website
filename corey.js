@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-
+const bodyParser = require('body-parser');
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('public')));
 
 // Route for the home page (also serves as the index)
 app.get('/about', (req, res) => {
@@ -19,7 +20,7 @@ app.get('/resume', (req, res) => {
 });
 
 // Define the port to listen on
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 1650;
 
 // Start the server
 app.listen(port, () => {
