@@ -5,7 +5,7 @@ services:
     build: .
     restart: always
     ports:
-      - "1650:1650"
+      - "80:3000"
     volumes:
       - uploads:/app/uploads
 
