@@ -13,6 +13,14 @@ app.get('/', (req, res) => {
     res.render('about');
 });
 
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
+app.post('/about', (req, res) => {
+    res.render('about');
+});
+
 
 // Route for the resume page
 app.get('/resume', (req, res) => {
