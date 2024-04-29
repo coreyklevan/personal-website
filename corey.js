@@ -1,6 +1,5 @@
 import express from 'express';
 import path from 'path';
-const path = require('path');
 const app = express();
 const port = 1650; // Use the configured port for Docker
 
@@ -12,8 +11,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for the home page, renders the 'about' view
 app.get('/', (_req, res) => {
+    console.log("Accessing the home page");
     res.render('about');
 });
+
 
 // Route for the resume page, renders the 'resume' view
 app.get('/resume', (_req, res) => {
