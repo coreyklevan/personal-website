@@ -13,6 +13,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 1500
+EXPOSE 1650
 
 CMD node corey.js
