@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-
+const path = require('path');
 const app = express();
 const port = 1650; // Use the configured port for Docker
 
