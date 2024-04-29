@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const port = 1500;
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -20,7 +21,7 @@ app.get('/resume', (req, res) => {
 });
 
 // Define the port to listen on
-const port = process.env.PORT || 1500;
+
 
 // Start the server
 app.listen(port, () => {
