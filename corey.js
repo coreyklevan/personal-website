@@ -10,9 +10,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for the home page, renders the 'about' view
-app.get('/', (_req, res) => {
-    console.log("Accessing the home page");
-    res.render('about');
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'about.ejs'));
 });
 
 
