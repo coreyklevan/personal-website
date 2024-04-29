@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 1650; // Use the configured port for Docker
+const port = 1500; // Use the configured port for Docker
 
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
