@@ -1,13 +1,12 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const bodyParser = require('body-parser');
+
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
-app.use(express.static(path.join('public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for the home page (also serves as the index)
 app.get('/about', (req, res) => {
